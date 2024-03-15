@@ -6,9 +6,10 @@ for i = 1:100
     sum = sum + i;
 end
 
-disp(['Sum = ', num2str(sum)]);
+sumAsNumber = num2str(sum);
+
+disp(['Sum = ', sumAsNumber]);
 disp('******************')
 disp(' ');
 
-fprintf(' i = %d, Sum = %d \n', i, s);
-fprintf('Sum values between 1 and 100 = %d\n', s);
+disp(['Sum values between 1 and 100 = ', sumAsNumber]);
