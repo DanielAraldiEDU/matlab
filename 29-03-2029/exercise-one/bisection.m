@@ -1,6 +1,6 @@
-function [c, counter] = bisection(a, b, error)
-    fa = fibonacci(a);
-    fb = fibonacci(b);
+function [c, counter] = bisection(a, b, error, length, root, volume)
+    fa = fx(length, root, volume, a);
+    fb = fx(length, root, volume, b);
     counter = 0;
 
     if (fa * fb) > 0
@@ -8,7 +8,7 @@ function [c, counter] = bisection(a, b, error)
     else
         while ((abs(b - a) / 2) > error)
            c = (a + b) / 2;
-           fc = fibonacci(c);
+           fc = fx(length, root, volume, c);
     
            if (fa * fc) > 0
              a = c;
