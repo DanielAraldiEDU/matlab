@@ -7,3 +7,4 @@ a = -1; b = 1.5;
 h(volume, root)
 
 diameter(root);
+xx = x0(r);
