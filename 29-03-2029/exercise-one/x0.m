@@ -1,3 +1,3 @@
-function [value] = x0(volume, root)
-    value = h(volume, root) / 2;
+function [value] = x0(r)
+    value = diameter(r) / 2;
 end
