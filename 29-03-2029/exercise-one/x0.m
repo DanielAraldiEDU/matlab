@@ -1,3 +1,3 @@
-function [value] = x0(r)
-    value = diameter(r) / 2;
+function [value] = x0(root)
+    value = diameter(root) / 2;
 end
